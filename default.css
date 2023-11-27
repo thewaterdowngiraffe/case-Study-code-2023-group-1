@@ -88,5 +88,19 @@ nav>ul>li:hover>.nav-icon>svg>path{
     width: 32px;
     fill:#adf7ffff;
 }
-
+ #login{
+            margin-top: 4em;
+            margin-left: 30vw;
+            justify-self:right;
+            
+        }
+         .customButton{
+            color: white;
+            background: #26418bff;
+            padding: .4em .8em;
+            border-radius: .5em;
+         }
+         .customButton:hover{
+            color: #adf7ffff;
+         }
         
