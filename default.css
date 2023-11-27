@@ -104,3 +104,19 @@ nav>ul>li:hover>.nav-icon>svg>path{
             color: #adf7ffff;
          }
         
+
+form{
+    width: 70%;
+    margin: 2em auto;
+    background: #eee;
+    padding: 2em;
+    border-radius: .5em;
+    box-shadow: 2px 2px 4px #888;
+    display: flex;
+}
+label{
+    margin: 1em;
+    color: #26418bff;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
