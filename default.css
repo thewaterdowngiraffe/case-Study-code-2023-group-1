@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+button.dropdown-toggle{
+    background-color: #ffffff00;
+    border-style: hidden;
+}
+
+
 html {
     height: 100%;
 }
