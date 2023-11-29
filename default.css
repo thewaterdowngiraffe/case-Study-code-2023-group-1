@@ -128,10 +128,9 @@ nav>ul>li:hover>.nav-icon>svg>path{
 
         label {
             margin: .5em;
-            
             display: inline-block;
             text-align: right;
-            width: 320px;
+            width: 400px;
         }
 
         .title-bar {
