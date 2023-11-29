@@ -143,7 +143,7 @@ nav>ul>li:hover>.nav-icon>svg>path{
             padding: .1em 1em
         }
 
-        .modal {
+        .custom-modal {
             z-index: 1;
             height: 100%;
             width: 100%;
