@@ -127,11 +127,12 @@
         ?>
     <!-- doesnt do anything lol--->
         <form method="post">
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname" value="John">
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" value="Doe">
-        <input type="submit" name="button1" value="Login">
+            <div>
+                <label for="fname">First name:&nbsp;<input type="text" id="fname" name="fname" value="John"></label>
+                <label for="lname">Last name:&nbsp;<input type="text" id="lname" name="lname" value="Doe"></label>
+                
+            </div>
+            <input type="submit" name="button1" value="Login">
         </form> 
     </div>
     <footer></footer>
