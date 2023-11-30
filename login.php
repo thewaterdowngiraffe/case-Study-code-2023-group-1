@@ -127,10 +127,10 @@
         ?>
     <!-- doesnt do anything lol--->
         <form method="post">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="John">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="Doe">
         <input type="submit" name="button1" value="Login">
         </form> 
     </div>
