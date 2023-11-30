@@ -23,8 +23,6 @@
             <button class="customButton">Login</button>
             </div>
     </header>
-    </header>
-
     <div id="left-bar">
         <nav>
             <ul>
@@ -58,11 +56,7 @@
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
-                    </div>
-
-
-
-                    
+                    </div> 
                 </li>
                 <li>
                     <div class="dropdown">
@@ -75,10 +69,7 @@
                             <a class="dropdown-item" href="#">Another action</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
-                    </div>
-
-
-                    
+                    </div> 
                 </li>
                  <li>
                     <div class="dropdown">
@@ -92,9 +83,6 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
-
-
-                    
                 </li>
                 <li>
                     <div class="dropdown">
@@ -108,9 +96,6 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </div>
-
-
-                    
                 </li>
 
             </ul>
@@ -137,5 +122,4 @@
     </div>
     <footer></footer>
 </body>
-
 </html>
