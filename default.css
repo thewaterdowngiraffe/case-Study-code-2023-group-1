@@ -88,35 +88,82 @@ nav>ul>li:hover>.nav-icon>svg>path{
     width: 32px;
     fill:#adf7ffff;
 }
- #login{
+ #login {
             margin-top: 4em;
-            margin-left: 30vw;
-            justify-self:right;
-            
+            margin-left: 40vw;
+            justify-self: right;
+            text-align: right;
+
         }
-         .customButton{
+
+        .customButton {
             color: white;
             background: #26418bff;
             padding: .4em .8em;
             border-radius: .5em;
-         }
-         .customButton:hover{
-            color: #adf7ffff;
-         }
-        
+            max-height: 2.5em;
+        }
 
-form{
-    width: 70%;
-    margin: 2em auto;
-    background: #eee;
-    padding: 2em;
-    border-radius: .5em;
-    box-shadow: 2px 2px 4px #888;
-    display: flex;
-}
-label{
-    margin: 1em;
-    color: #26418bff;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+        .customButton:hover {
+            color: #adf7ffff;
+        }
+
+        form {
+            width: 70%;
+            margin: 2em auto;
+            background: #eee;
+            padding: 2em;
+            border-radius: .5em;
+            box-shadow: 2px 2px 4px #888;
+            align-items: center;
+            display: block;
+            color: #26418bff;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        input{
+            display: inline-block;
+            margin-left: 1em;
+        }
+
+        label {
+            margin: .5em;
+            display: inline-block;
+            text-align: right;
+            width: 400px;
+        }
+
+        .title-bar {
+            width: 90%;
+            margin: 1em auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            background: #26418bff;
+            padding: .1em 1em
+        }
+
+        .custom-modal {
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(20, 20, 20, 0.4);
+            /* Black w/ opacity */
+
+        }
+
+        .modal-box {
+            margin: 30vh auto;
+            background: #eee;
+            padding: 2em;
+            border-radius: .5em;
+            box-shadow: 2px 2px 4px #888;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            align-items: center;
+            width: 60vw;
+        }

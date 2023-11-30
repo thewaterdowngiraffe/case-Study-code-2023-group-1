@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Service Portal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://casestudy.hamantha.com/case-Study-code-2023-group-1/default.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo"><span>H</span></div>
+        <h1>HOSPITAL <br>Service Portal</h1>
+        <div id="login">
+            Logged in as: <div>John Smith</div>
+            <!-- <button class="customButton">Login</button> -->
+            <button class="customButton">Logout</button>
+        </div>
+    </header>
+
+    <div id="left-bar">
+        <nav>
+            <ul>
+                <li>
+                    <a class="dropdown-item" href="https://casestudy.hamantha.com/case-Study-code-2023-group-1/index.html">Home</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 96 96" version="1.1"><path d="M 41 13.727 C 32.909 16.798, 26 26.472, 26 34.728 C 26 39.693, 28.141 45.457, 31.192 48.705 L 33.289 50.937 29.567 54.718 C 27.519 56.798, 24.754 60.623, 23.422 63.217 C 21.198 67.547, 21 69.083, 21 81.967 L 21 96 48 96 L 75 96 75 81.467 C 75 68.088, 74.809 66.559, 72.593 62.217 C 71.270 59.623, 68.793 56.177, 67.089 54.559 L 63.992 51.618 66.443 49.059 C 71.956 43.303, 73.498 33.885, 70.134 26.500 C 68.147 22.137, 61.373 15.472, 57.383 13.955 C 54.700 12.936, 43.497 12.780, 41 13.727" stroke="none" fill="#fcfcfc" fill-rule="evenodd"/><path d="" stroke="none" fill="#fcfcfc" fill-rule="evenodd"/></svg>
+                            </div>
+                            
+                                Patient Records
+                          </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">View Patient Record</a>
+                            <a class="dropdown-item" href="#">Create/Edit Patient</a>
+                            <a class="dropdown-item" href="#">Remove Patient</a>
+                        </div>
+                    </div>
+                </li>
+                 <li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="nav-icon"><img src="household.png" alt="" width="32px"></div>
+                                Households
+                          </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">View Households</a>
+                            <a class="dropdown-item" href="#">Create Household</a>
+                            <a class="dropdown-item" href="#">Update Household</a>
+                            <a class="dropdown-item" href="#">Remove Household</a>
+                        </div>
+                    </div>
+
+
+
+                    
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="nav-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 96 96" version="1.1"><path d="M 41 13.727 C 32.909 16.798, 26 26.472, 26 34.728 C 26 39.693, 28.141 45.457, 31.192 48.705 L 33.289 50.937 29.567 54.718 C 27.519 56.798, 24.754 60.623, 23.422 63.217 C 21.198 67.547, 21 69.083, 21 81.967 L 21 96 48 96 L 75 96 75 81.467 C 75 68.088, 74.809 66.559, 72.593 62.217 C 71.270 59.623, 68.793 56.177, 67.089 54.559 L 63.992 51.618 66.443 49.059 C 71.956 43.303, 73.498 33.885, 70.134 26.500 C 68.147 22.137, 61.373 15.472, 57.383 13.955 C 54.700 12.936, 43.497 12.780, 41 13.727 M 52 70 L 52 74 59 74 L 66 74 66 70 L 66 66 59 66 L 52 66 52 70" stroke="none" fill="#fffcfc" fill-rule="evenodd"/><path d="" stroke="none" fill="#fcfcfc" fill-rule="evenodd"/></svg></div>
+                    Staff Records
+                          </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">View Staff Record</a>
+                            <a class="dropdown-item" href="#">Create/ Edit Staff</a>
+                            <a class="dropdown-item" href="#">Remove Staff</a>
+                            <a class="dropdown-item" href="#">Generate Report</a>
+                        </div>
+                    </div>
+
+
+                    
+                </li>
+                 <li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="nav-icon"><img src="calendar.png" alt="" width="32px"></div>
+                    Appointments
+                          </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">View Calendar</a>
+                            <a class="dropdown-item" href="#">Schedule/ Update Appointment</a>
+                            <a class="dropdown-item" href="#">Cancel Appointment</a>
+                        </div>
+                    </div>
+
+
+                    
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="nav-icon"><img src="dollaricon.png" alt="" width="32px"></div>
+                        Invoices
+                          </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Generate Invoices</a>
+                            <a class="dropdown-item" href="#">Check Invoice Status</a>
+                            
+                        </div>
+                    </div>
+
+
+                    
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div id="mid">
+
+        <h3 class="title-bar">Create / Edit Patient</h3>
+
+        <form>
+            <label>Health Card Number *
+                <input type="text">
+            </label>
+            <!-- <label>Field 1
+                <input type="text">
+                </label>
+                <br> -->
+            <button class="customButton">Submit</button>
+        </form>
+
+        <form action="">
+            <h3> New Patient</h3>
+            <div>&nbsp;</div>
+            <div>
+                <label for="">First Name&nbsp;<input type="text"></label>
+                <label for=""> Last Name&nbsp;<input type="text"></label>
+                <label for="">D.O.B.&nbsp;<input type="date"> </label> 
+                <label for="">Gender &nbsp;<input type="text" style="width: 4em;"></label>
+                
+                <label for="">First Visit&nbsp; <input type="date" name="" id=""></label>
+                <label for="">Last Visit &nbsp; <input type="date" name="" id=""></label>
+                </label>
+                <div style="margin-left: 80%">
+                <button  class="customButton">Submit</button>
+                <button  class="customButton">Cancel</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- <div class="custom-modal">
+                <div class="modal-box">
+                    <h2 class="title-bar">Patient Not Found</h2>
+                    <div>Create new patient?</div><br>
+                    <button class="customButton">Yes</button>
+                    <button class="customButton">No</button>
+                </div>
+            </div> -->
+    </div>
+
+    <footer></footer>
+</body>
+
+</html>
