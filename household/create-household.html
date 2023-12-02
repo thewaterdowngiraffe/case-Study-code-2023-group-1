@@ -12,51 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <style> 
-        form {
-            max-width: 600px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h3 {
-            padding-top: 20px;
-            color: #555;
-        }
-
-        .householdInput {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .householdInput label {
-            flex: 1 1 100%;
-            padding: 10px;
-            color: #555;
-        }
-
-        .householdInput input {
-            flex: 1 1 calc(50% - 10px);
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        .formActions {
-            margin-top: 20px;
-            display: flex;
-            justify-content: flex-end;
-        }
-    
-    
-    
-    </style>
+  
 </head>
 
 <body>
@@ -178,38 +134,29 @@
             <button class="customButton">Submit</button>
         </form>
 
+
         <form action="">
-            <div class="householdForm">
-                <h3> New household</h3>
+            <h3> New household </h3>
+            <div>&nbsp;</div>
+            <div>
+                <label for="">Head of Household:&nbsp;<input type="text"></label>
+                <label for=""> Address:&nbsp;<input type="text"></label>
+                <label for="">Telephone Number:&nbsp;<input type="text" placeholder="e.g. (519) 123 1234"> </label> 
+                </br></br></br>
+                <h3> Insurance Carrier Record </h3>
                 <div>&nbsp;</div>
-                <div class="householdInput">
-                    <label for="head">Head of Household:&nbsp;</label>
-                    <input name="head" type="text"/>
-                    <label for="address">Address:&nbsp;</label>
-                    <input name="address" type="text"/>
-                    <label for="telephone">Telephone Number:&nbsp;</label> 
-                    <input name="telephone" type="text" placeholder="e.g. (519) 123 1234"/>
-                </div>
-            </div>
+                <label for="">Insurance Company:&nbsp;<input type="text"></label>
+                <label for=""> Billing Contact Person:&nbsp;<input type="text"></label>
+                <label for="">Telephone Number:&nbsp;<input type="text" placeholder="e.g. (519) 123 1234"> </label> 
 
-            <div class="householdForm">
-                <h3>Insurance Carrier Record</h3>
-                <div>&nbsp;</div>
-                <div class="householdInput"> 
-                    <label for="insuranceCompany">Insurance Company:&nbsp;</label>
-                    <input name="insuranceCompany" type="text"/>
-                    <label for="billingContact"> Billing Contact Person:&nbsp;</label>
-                    <input name="billingContact" type="text"/>
-                    <label for="telephone">Telephone Number:&nbsp; </label>
-                    <input name="telephone" type="text" placeholder="e.g. (519) 123 1234"/> 
-                </div>
-            </div>
 
-            <div class="formActions">
+                <div style="margin-left: 80%">
                 <button  class="customButton">Submit</button>
                 <button  class="customButton">Cancel</button>
+                </div>
             </div>
         </form>
+
 
         <!-- <div class="custom-modal">
                 <div class="modal-box">
